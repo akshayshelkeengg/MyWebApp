@@ -16,6 +16,7 @@ public class HomeController {
 	@RequestMapping("hello")
 	public ModelAndView hello(Alien alien )
 	{
+		
 		ModelAndView mv= new ModelAndView();
 		mv.addObject("obj", alien);
 		mv.setViewName("hello");
